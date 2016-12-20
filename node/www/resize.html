@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Image Resize</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <header>
+    <div id ="logo">
+      <a href="./"><img src="images/logo.png"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="main">
+    <form onsubmit="convertToBase64()" action="resize" method="GET">
+	    <p>
+	    	<label for="url">URL:</label>
+	    	<input placeholder="http://example.com/image.png" id="url" name="url" type="text" autofocus>
+	    </p>
+	    <p>
+	    	<label for="width">Width:</label>
+	    	<input placeholder="100" id="width" name="width" type="number">
+	    </p>
+	    <p>
+	    	<label for="height">Height:</label>
+	    	<input placeholder="100" id="height" name="height" type="number">
+	    </p>
+	    <p><input class="button button-dark" value="Submit" type="submit"></p>
+    </form>
+  </div>
+  <script type="text/javascript">
+	  function convertToBase64() {
+	  	document.getElementById("url").value = btoa(document.getElementById("url").value);
+	  }
+  </script>
+</body>
+</html>

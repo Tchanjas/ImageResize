@@ -1,11 +1,13 @@
 # Image resize
 
-A simple high performance web based system running Node.js and NGINX to resize a image.
+A simple high performance web based system running Node.js and NGINX to resize images.
 
 
 ## Architecture
 
 We use three VMs with CentOS 7. One with NGINX for load balancing and caching and the other two as Node.js servers.
+
+Using [sharp](https://github.com/lovell/sharp), a high performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP and TIFF images. Uses the libvips library.
 
 ### Features
 
@@ -13,8 +15,9 @@ We use three VMs with CentOS 7. One with NGINX for load balancing and caching an
 * [x] Multithread
 * [x] Load Balacing
 * [x] Caching
+* [x] Pretty interface and landing page
 * [ ] Watermarking
-* [ ] Pretty interface and landing page
+* [ ] Rotation
 
 ### Notes
 
