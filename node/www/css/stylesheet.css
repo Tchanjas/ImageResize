@@ -57,7 +57,7 @@ a:hover {
 	border-color: #F1F1F1;
 }
 
-input {
+input[type="text"], input[type="number"] {
 	height: 38px;
 	width: 500px;
 	padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
@@ -132,4 +132,10 @@ nav li a:hover {
 
 #main p {
 	font-size: 13px;
+}
+
+.options label {
+	display: inline;
+	margin-left: .5rem;
+	font-weight: 400;
 }
