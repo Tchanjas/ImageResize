@@ -2,6 +2,7 @@
 
 A simple high performance web based system running Node.js and NGINX to resize images.
 
+![Screenshot](screenshots/resize.png "Screenshot")
 
 ## Architecture
 

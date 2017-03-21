@@ -68,12 +68,6 @@ input[type="text"], input[type="number"] {
 	box-sizing: border-box;
 }
 
-input {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-
 input:focus {
 	border: 1px solid #04232d;
 	outline: 0;
